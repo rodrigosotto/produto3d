@@ -1,6 +1,4 @@
-
-
-    <!-- Rodapé fixo -->
+<!-- Rodapé fixo -->
     <footer class="footer">
         <div class="container">
             <span class="text-muted">&copy; <?php echo date("Y"); ?> MissLaura. Todos os direitos reservados.</span>

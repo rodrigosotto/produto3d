@@ -14,5 +14,4 @@
 target="_blank">
 <img src="./assets/images/misslaura-logotipo.png" alt="MissLaura Logo" class="logo">
 </a>
-
 </header>

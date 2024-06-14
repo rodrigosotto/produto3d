@@ -106,6 +106,5 @@
         </ul>
     </nav>
 
-
     <!-- Rodapé fixo -->
      <?php require_once 'assets/includes/footer.php'; ?>
