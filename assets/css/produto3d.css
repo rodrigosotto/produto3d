@@ -33,6 +33,7 @@ footer {
   height: 72vh;
   position: relative;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .swiper-slide {
@@ -106,9 +107,30 @@ footer {
   background-color: #f6799b;
   color: #fff;
 }
+
+.btn-voltar {
+  padding: 10px 30px 10px 30px;
+  background-color: #ffc738;
+  color: #f6799b;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-voltar:hover {
+  background-color: #f6799b;
+  color: #ffc738;
+  text-decoration: none;
+}
+
 footer span.text-muted{
   color: white !important;
 }
+
+
 /* Consultas de mídia para ajustar o layout em diferentes tamanhos de tela */
 @media screen and (max-width: 768px) {
   .swiper {

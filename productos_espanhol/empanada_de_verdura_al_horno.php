@@ -6,9 +6,9 @@
   <title>Empanadas de Verduras al Horno - Misslaura</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../assets/css/produto3d.css" />
- 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,8 +53,13 @@
     ?>
   </div>
 
+  <!-- Botão voltar -->
+  <div class="row d-flex justify-content-center align-items-center">
+    <a href="../productos_espanhol/?pagina=1" class="btn-voltar" >Ver Todos os Produtos</a>
+  </div>
+
 <!-- Rodapé fixo -->
-<footer class="footer">
+<footer class="footer mt-5">
     <div class="container">
         <span class="text-muted">&copy; <?php echo date("Y"); ?> MissLaura. Todos os direitos reservados.</span>
     </div>

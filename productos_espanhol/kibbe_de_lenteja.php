@@ -8,6 +8,7 @@
   <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../assets/css/produto3d.css" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
         /* Estilo personalizado para o header e rodapé */
         header {
@@ -66,6 +67,11 @@ target="_blank">
       echo '<img class="swiper-thumb ' . $activeClass . '" src="' . $pastaEspecifica . $imagem . '" alt="CHICKEN-PASTRY" data-index="' . $index . '" />';
     }
     ?>
+  </div>
+
+  <!-- Botão voltar -->
+  <div class="row d-flex justify-content-center align-items-center">
+    <a href="../productos_espanhol/?pagina=1" class="btn-voltar" >Ver Todos os Produtos</a>
   </div>
 
 <!-- Rodapé fixo -->
