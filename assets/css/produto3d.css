@@ -48,6 +48,14 @@ footer {
   width: 100%;
   height: 100%;
 }
+#vertical {
+  width: 100%;
+  max-width: 600px;
+  height: 70vh;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 10px;
+}
 
 /* .swiper-thumbs {
   position: absolute;
@@ -132,9 +140,13 @@ footer span.text-muted{
 
 
 /* Consultas de mídia para ajustar o layout em diferentes tamanhos de tela */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 541px) and (max-width: 768px) {
   .swiper {
     height: 50vh;
+  }
+
+  #vertical {
+    height: 85vh;
   }
 
   .swiper-thumb {
@@ -146,9 +158,18 @@ footer span.text-muted{
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 540px) {
+  #vertical {
+    height: 55vh;
+  }
+}
 @media screen and (max-width: 480px) {
   .title-swiper {
     font-size: 1.5rem;
     padding: 20px;
+  }
+
+  #vertical {
+    height: 55vh;
   }
 }

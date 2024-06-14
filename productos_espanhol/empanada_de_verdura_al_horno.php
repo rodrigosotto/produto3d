@@ -48,7 +48,7 @@
       $activeClass = ($index === 0) ? 'active' : '';
 
       // Imprimir o código do thumb
-      echo '<img class="swiper-thumb ' . $activeClass . '" src="' . $pastaEspecifica . $imagem . '" alt="CHICKEN-PASTRY" data-index="' . $index . '" />';
+      echo '<img class="swiper-thumb ' . $activeClass . '" src="' . $pastaEspecifica . $imagem . '" alt="Empanadas de Verduras al Horno" data-index="' . $index . '" />';
     }
     ?>
   </div>

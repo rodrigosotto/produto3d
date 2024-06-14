@@ -50,7 +50,7 @@ target="_blank">
       foreach ($imagens as $index => $imagem) {
         // Imprimir o código do swiper para cada imagem
         echo '<div class="swiper-slide">';
-        echo '<img src="' . $pastaEspecifica . $imagem . '" alt="CHICKEN-PASTRY" />';
+        echo '<img class"main-image" src="' . $pastaEspecifica . $imagem . '" alt="Chicken Pastry" />';
         echo '</div>';
       }
       ?>
@@ -67,7 +67,7 @@ target="_blank">
       $activeClass = ($index === 0) ? 'active' : '';
 
       // Imprimir o código do thumb
-      echo '<img class="swiper-thumb ' . $activeClass . '" src="' . $pastaEspecifica . $imagem . '" alt="CHICKEN-PASTRY" data-index="' . $index . '" />';
+      echo '<img class="swiper-thumb ' . $activeClass . '" src="' . $pastaEspecifica . $imagem . '" alt="Chicken Pastry" data-index="' . $index . '" />';
     }
     ?>
   </div>

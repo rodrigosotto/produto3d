@@ -27,7 +27,7 @@
             $diretorio->close();
 
             // Configurações para paginação
-            $produtosPorPagina = 10; // 3 linhas com 3 cards cada
+            $produtosPorPagina = 11; // 3 linhas com 3 cards cada
             $paginaAtual = isset($_GET['pagina']) ? $_GET['pagina'] : 1;
             $indiceInicial = ($paginaAtual - 1) * $produtosPorPagina;
             $arquivosPagina = array_slice($arquivosPHP, $indiceInicial, $produtosPorPagina);
