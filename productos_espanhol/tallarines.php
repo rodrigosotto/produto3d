@@ -77,6 +77,8 @@ target="_blank">
         <span class="text-muted">&copy; <?php echo date("Y"); ?> MissLaura. Todos os direitos reservados.</span>
     </div>
 </footer>
+  <!-- Panzoom JS -->
+<script src="https://unpkg.com/@panzoom/panzoom@4.4.3/dist/panzoom.min.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../assets/js/produto3d.js"></script>

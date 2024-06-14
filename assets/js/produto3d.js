@@ -1,15 +1,14 @@
 var mainSwiper = new Swiper(".mySwiper", {
-    effect: "cube",
+    effect: "fade",
     loop: true,
     grabCursor: true,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
   
@@ -35,12 +34,16 @@ var mainSwiper = new Swiper(".mySwiper", {
     document.querySelectorAll('.main-image').forEach(function(image) {
       image.addEventListener('click', function() {
         if (image.requestFullscreen) {
+          console.log('funciona ou nao');
           image.requestFullscreen();
         } else if (image.mozRequestFullScreen) { // Firefox
+          console.log('funciona ou nao');
           image.mozRequestFullScreen();
         } else if (image.webkitRequestFullscreen) { // Chrome, Safari and Opera
+          console.log('funciona ou nao');
           image.webkitRequestFullscreen();
         } else if (image.msRequestFullscreen) { // IE/Edge
+          console.log('funciona ou nao');
           image.msRequestFullscreen();
         }
       });

@@ -23,14 +23,14 @@ footer {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
 }
 
 .swiper {
   width: 100%;
-  max-width: 1024px;
-  height: 70vh;
+  max-width: 800px;
+  height: 75vh;
   position: relative;
   margin: 0 auto;
 }
