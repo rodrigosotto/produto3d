@@ -31,7 +31,7 @@
       foreach ($imagens as $index => $imagem) {
         // Imprimir o código do swiper para cada imagem
         echo '<div class="swiper-slide">';
-        echo '<img src="' . $pastaEspecifica . $imagem . '" alt="Empanadas de Verduras al Horno" />';
+        echo '<img class="main-image" src="' . $pastaEspecifica . $imagem . '" alt="Empanadas de Verduras al Horno" />';
         echo '</div>';
       }
       ?>

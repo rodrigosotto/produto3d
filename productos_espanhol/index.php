@@ -25,7 +25,7 @@
             color: white !important;
         }
         .logo {
-            max-width: 200px; /* Ajuste conforme necessário */
+            max-width: 150px;
             height: auto;
         }
         .flags img {
@@ -106,8 +106,8 @@ target="_blank">
                 echo "<div class='card-body'>";
                 echo "<h5 class='card-title'><a href='" . $arquivo . "'>" . strtoupper($produtoNomeSemUnderscore) . "</a></h5>";
                 echo "<div class='flags'>";
-                echo "<a href='../index.php'><img src='../assets/images/united-states.png' alt='USA'></a>";
-                echo "<a href='./productos_espanhol/'><img src='../assets/images/spain.png' alt='Spain'></a>";
+                echo "<a href='../?pagina=1'><img src='../assets/images/united-states.png' alt='USA'></a>";
+                echo "<a href='./?pagina=1'><img src='../assets/images/spain.png' alt='Spain'></a>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";

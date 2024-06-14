@@ -51,7 +51,7 @@
                     echo "<h5 class='card-title'><a href='" . $arquivo . "'>" . strtoupper($produtoNomeSemUnderscore) . "</a></h5>";
                     echo "<div class='flags'>";
                     echo "<a href='.'><img src='./assets/images/united-states.png' alt='USA'></a>";
-                    echo "<a href='./productos_espanhol/'><img src='./assets/images/spain.png' alt='Spain'></a>";                    echo "</div>";
+                    echo "<a href='./productos_espanhol/?pagina=1'><img src='./assets/images/spain.png' alt='Spain'></a>";                    echo "</div>";
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";

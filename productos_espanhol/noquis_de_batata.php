@@ -49,7 +49,7 @@ target="_blank">
       foreach ($imagens as $index => $imagem) {
         // Imprimir o código do swiper para cada imagem
         echo '<div class="swiper-slide">';
-        echo '<img src="' . $pastaEspecifica . $imagem . '" alt="Ñoquis de Papa" />';
+        echo '<img class="main-image" src="' . $pastaEspecifica . $imagem . '" alt="Ñoquis de Papa" />';
         echo '</div>';
       }
       ?>
