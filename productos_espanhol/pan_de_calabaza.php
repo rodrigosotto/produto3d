@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Pan de Calabresa - Misslaura</title>
+  <title>Pan de Calabaza - Misslaura</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -29,14 +29,14 @@ target="_blank">
 </a>
 
 </header>
-<h1 class="title-swiper">Pan de Calabresa</h1>
+<h1 class="title-swiper">Pan de Calabaza</h1>
 
   <!-- Swiper -->
   <div class="swiper mySwiper" id="vertical">
     <div class="swiper-wrapper">
       <?php
       // Diretório da pasta específica
-      $pastaEspecifica = '../assets/images/productos_es/pan_de_calabresa/';
+      $pastaEspecifica = '../assets/images/productos_es/pan_de_calabaza/';
 
       // Lista de imagens na pasta específica
       $imagens = scandir($pastaEspecifica);
@@ -48,7 +48,7 @@ target="_blank">
       foreach ($imagens as $index => $imagem) {
         // Imprimir o código do swiper para cada imagem
         echo '<div class="swiper-slide">';
-        echo '<img class="main-image" src="' . $pastaEspecifica . $imagem . '" alt="Pan de Calabresa" />';
+        echo '<img class="main-image" src="' . $pastaEspecifica . $imagem . '" alt="Pan de Calabaza" />';
         echo '</div>';
       }
       ?>
@@ -65,7 +65,7 @@ target="_blank">
       $activeClass = ($index === 0) ? 'active' : '';
 
       // Imprimir o código do thumb
-      echo '<img class="swiper-thumb ' . $activeClass . '" src="' . $pastaEspecifica . $imagem . '" alt="Pan de Calabresa" data-index="' . $index . '" />';
+      echo '<img class="swiper-thumb ' . $activeClass . '" src="' . $pastaEspecifica . $imagem . '" alt="Pan de Calabaza" data-index="' . $index . '" />';
     }
     ?>
   </div>
