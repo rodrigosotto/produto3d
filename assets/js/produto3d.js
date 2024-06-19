@@ -29,25 +29,28 @@ var mainSwiper = new Swiper(".mySwiper", {
       }
     });
   }
-
-    // Add fullscreen functionality
-    document.querySelectorAll('.main-image').forEach(function(image) {
-      image.addEventListener('click', function() {
-        if (image.requestFullscreen) {
-          console.log('funciona ou nao');
-          image.requestFullscreen();
-        } else if (image.mozRequestFullScreen) { // Firefox
-          console.log('funciona ou nao');
-          image.mozRequestFullScreen();
-        } else if (image.webkitRequestFullscreen) { // Chrome, Safari and Opera
-          console.log('funciona ou nao');
-          image.webkitRequestFullscreen();
-        } else if (image.msRequestFullscreen) { // IE/Edge
-          console.log('funciona ou nao');
-          image.msRequestFullscreen();
-        }
+  document.querySelectorAll('.main-image').forEach(function(image) {
+    // Check for touch support to enable mobile zoom
+    if ('ontouchstart' in window) {
+      image.addEventListener('touchstart', function(event) {
+        event.preventDefault(); // Prevent default behavior (scrolling) on touchstart
       });
+    }
+  
+    // Fullscreen functionality (remains the same)
+    image.addEventListener('click', function() {
+      if (image.requestFullscreen) {
+        image.requestFullscreen();
+      } else if (image.mozRequestFullScreen) { // Firefox
+        image.mozRequestFullScreen();
+      } else if (image.webkitRequestFullscreen) { // Chrome, Safari, Opera
+        image.webkitRequestFullscreen();
+      } else if (image.msRequestFullscreen) { // IE/Edge
+        image.msRequestFullscreen();
+      }
     });
+  });
+  
   
     // Exit fullscreen when fullscreen mode is closed
     document.addEventListener('fullscreenchange', function() {

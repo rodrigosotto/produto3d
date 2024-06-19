@@ -46,7 +46,7 @@
                 if (file_exists($caminhoImagem)) {
                     echo "<div class='col-md-4 mb-4'>";
                     echo "<div class='card'>";
-                    echo "<img src='" . $caminhoImagem . "' class='card-img-top' alt='" . $produtoNomeSemUnderscore . "'>";
+                    echo "<a href='" . $arquivo . "'><img src='" . $caminhoImagem . "' class='card-img-top' alt='" . $produtoNomeSemUnderscore . "'></a>";
                     echo "<div class='card-body'>";
                     echo "<h5 class='card-title'><a href='" . $arquivo . "'>" . strtoupper($produtoNomeSemUnderscore) . "</a></h5>";
                     echo "<div class='flags'>";

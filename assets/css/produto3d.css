@@ -142,7 +142,7 @@ footer span.text-muted{
 /* Consultas de mídia para ajustar o layout em diferentes tamanhos de tela */
 @media screen and (min-width: 541px) and (max-width: 768px) {
   .swiper {
-    height: 50vh;
+    height: 51vh;
   }
 
   #vertical {
@@ -162,8 +162,15 @@ footer span.text-muted{
   #vertical {
     height: 55vh;
   }
+
+  .swiper {
+    height: 43vh;
+}
 }
 @media screen and (max-width: 480px) {
+  .swiper {
+    height: 40vh;
+}
   .title-swiper {
     font-size: 1.5rem;
     padding: 20px;
